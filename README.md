@@ -1,18 +1,31 @@
 # Floquet-Engineered Topological Quantum Processor Simulations
 
-[![arXiv](https://img.shields.io/badge/arXiv-2602.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2602.XXXXX)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-This repository contains simulation code for the paper:
-
+Simulation code for the paper:  
 **"Theoretical Roadmap and Preliminary Simulation of a Floquet-Engineered Topological Quantum Processor Based on Hybrid Semiconductor-Metal Oxide Heterostructures"**
 
 *Alperen Mehmet Zelal*  
 Independent Research Team
 
-## 📖 Abstract
+## Quick Overview
 
-The realization of scalable, fault-tolerant quantum computing is currently impeded by the rapid decoherence of standard silicon spin qubits and the materials engineering challenges associated with intrinsic topological superconductors. We present a novel heterostructure design combining pre-synthesized Wurtzite-phase GaP/SiGe core-shell nanowires with Iridium Oxide (IrO₂), where Floquet engineering manipulates electronic topology rather than crystal structure. This approach leverages established semiconductor manufacturing techniques while targeting the noise-immunity of topological phases.
+This repository contains Jupyter notebooks for simulating various aspects of our proposed quantum processor:
 
-## 🏗️ Repository Structure
+### 🔬 Materials Simulations (`tight_binding/`)
+- `Iridium Oxide Lattice.ipynb` - Crystal structure and electronic properties
+- `Iridium Oxide Magnetic Field.ipynb` - Magnetic response simulations
+
+### ⚡ Quantum Error Correction (`surface_code/`)
+- `surface_code_simulation.ipynb` - Surface code threshold calculations
+
+### 📄 Research Paper (`paper/`)
+- `arxiv_submission.pdf` - Complete research paper (PDF)
+
+### 📚 Additional Simulations (root folder)
+- Quantum teleportation, decoherence tests, CNOT gates, chip simulations
+
+## How to Run
+
+```bash
+git clone https://github.com/amz-quantum/floquet-quantum-simulations.git
+cd floquet-quantum-simulations
+jupyter notebook
